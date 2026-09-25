@@ -1,0 +1,13 @@
+{
+  // Cloudflare Workers Static Assets — serves ./public as a static site.
+  // Docs: https://developers.cloudflare.com/workers/static-assets/
+  "name": "joyee-website",
+  "compatibility_date": "2026-09-20",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
