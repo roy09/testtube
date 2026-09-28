@@ -3,6 +3,8 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "testtube",
   "compatibility_date": "2026-09-26",
+  // Runs before every `wrangler deploy`, so the dashboard needs no separate build command.
+  "build": { "command": "npm run build" },
   "assets": {
     "directory": "./out",
     "not_found_handling": "404-page"
