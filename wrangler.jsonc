@@ -1,0 +1,10 @@
+{
+  // Static site: `npm run build` writes plain files to ./out, which are served as-is.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "testtube",
+  "compatibility_date": "2026-09-26",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}
