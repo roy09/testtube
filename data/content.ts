@@ -166,7 +166,6 @@ export const aboutContent = {
   bio_paragraphs: [
     "Anupoma Joyeeta Joyee is a dually qualified legal professional, called to the Bar at The Honourable Society of Lincoln’s Inn and practicing as an Advocate. With a CIPD Level 7 qualification (AHRI recognised pathway), she bridges the gap between employment law, day-to-day HR practice and regulatory compliance.",
     "Her background includes serving as Head of HR & Legal and Compliance Manager for regulated social-care providers across South Gloucestershire, Gloucestershire, Bristol and Wales. That front-line experience means she understands the pressures organisations face, whether it is a regulator’s finding, a sponsor-licence issue or a tribunal claim.",
-    "Currently based in Australia, Anupoma runs a responsive, remote advisory practice. Backed by a dedicated three-person team, she provides businesses and organisations in the UK and Australia with sound legal strategy, fast and careful drafting, and dependable compliance support.",
   ],
 };
 
