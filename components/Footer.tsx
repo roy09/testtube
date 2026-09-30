@@ -18,7 +18,7 @@ export function Footer() {
         <nav aria-label="Footer" className="md:col-span-3">
           <h2 className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Pages</h2>
           <ul className="mt-4 space-y-2.5 text-sm">
-            {siteConfig.navigation.map((item) => (
+            {[...siteConfig.navigation, ...siteConfig.legalLinks].map((item) => (
               <li key={item.href}>
                 <Link href={item.href} className="hover:text-white">
                   {item.label}

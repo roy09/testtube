@@ -1,14 +1,15 @@
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, Check, Phone } from "lucide-react";
 import { ButtonLink } from "@/components/ButtonLink";
+import { CredentialDetail } from "@/components/CredentialDetail";
 import { CtaBand } from "@/components/CtaBand";
 import { ServiceIcon } from "@/components/ServiceIcon";
 import { homeContent, servicesContent, siteConfig } from "@/data/content";
-import { mailtoHref, splitCredential } from "@/lib/site";
+import { mailtoHref } from "@/lib/site";
 
 export default function HomePage() {
   const { hero, trust_badges, what_we_do, how_it_works, fees } = homeContent;
-  // "Sound Legal Counsel. Practical HR Solutions." → two lines, second one quieter.
+  // A headline with two sentences splits into two lines, the second one quieter.
   const [headlineLead, ...headlineRest] = hero.headline.split(/(?<=\.)\s+/);
 
   return (
@@ -74,18 +75,15 @@ export default function HomePage() {
       {/* Credentials */}
       <section aria-label="Credentials" className="border-b border-line bg-white">
         <ul className="mx-auto grid max-w-6xl gap-px bg-line md:grid-cols-3">
-          {trust_badges.map((badge) => {
-            const { title, detail } = splitCredential(badge);
-            return (
-              <li key={badge} className="flex gap-4 bg-white px-4 py-8 sm:px-6 lg:px-8">
-                <BadgeCheck className="mt-0.5 size-5 shrink-0 text-navy" strokeWidth={1.5} aria-hidden="true" />
-                <div>
-                  <p className="font-serif text-lg leading-snug text-navy">{title}</p>
-                  {detail && <p className="mt-1 text-sm leading-snug text-ink">{detail}</p>}
-                </div>
-              </li>
-            );
-          })}
+          {trust_badges.map((badge) => (
+            <li key={badge.title} className="flex gap-4 bg-white px-4 py-8 sm:px-6 lg:px-8">
+              <BadgeCheck className="mt-0.5 size-5 shrink-0 text-navy" strokeWidth={1.5} aria-hidden="true" />
+              <div>
+                <p className="font-serif text-lg leading-snug text-navy">{badge.title}</p>
+                <CredentialDetail credential={badge} className="mt-1 text-sm leading-snug text-ink" />
+              </div>
+            </li>
+          ))}
         </ul>
       </section>
 
@@ -134,11 +132,7 @@ export default function HomePage() {
           <ul className="mt-12 grid gap-6 lg:grid-cols-3">
             {fees.items.map((fee) => (
               <li key={fee.label} className="border border-line p-8">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-ink">{fee.label}</p>
-                <p className="mt-4 font-serif text-3xl text-navy">
-                  {fee.figure}
-                  {"per" in fee && <span className="ml-1.5 font-sans text-base text-ink">{fee.per}</span>}
-                </p>
+                <h3 className="text-2xl">{fee.label}</h3>
                 <p className="mt-4 leading-relaxed text-ink">{fee.detail}</p>
               </li>
             ))}

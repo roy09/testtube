@@ -71,7 +71,8 @@ push to master on GitHub ──► Cloudflare Workers Builds (Worker "testtube")
 | Services (add/remove/reword) | `servicesContent.items` — icons must be a name in `IconName`; add new Lucide icons to `components/ServiceIcon.tsx` |
 | New article / publication | `publicationsContent.articles` — copy the commented template; `date` is `YYYY-MM-DD`; sorted newest-first automatically |
 | About page text (intro, sections, track record) | `aboutContent` |
-| Credentials list | `homeContent.trust_badges` ("Title - Detail" or "Title (Detail)" splits into two lines) |
+| Credentials list | `homeContent.trust_badges` (`title`, optional `detail` and `link`) |
+| Regulatory information page | `regulatoryContent` (footer link lives in `siteConfig.legalLinks`) |
 | Menu items | `siteConfig.navigation` (sitemap uses this list too) |
 | Colours, fonts | `app/globals.css` (`@theme` tokens) and `app/layout.tsx` (Google fonts) |
 | Footer text, ABN, disclaimers | `footerContent` in `data/content.ts` (layout in `components/Footer.tsx`) |

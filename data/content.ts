@@ -12,6 +12,12 @@ export type Service = {
   description: string;
 };
 
+export type Credential = {
+  title: string;
+  detail?: string;
+  link?: { label: string; href: string };
+};
+
 export type Article = {
   title: string;
   publication: string;
@@ -28,7 +34,7 @@ export type Article = {
 export const siteConfig = {
   siteName: "Joyee Praxis Advisory",
   siteUrl: "https://joyeepraxis.com",
-  tagline: "Independent Legal, HR & Compliance Counsel",
+  tagline: "HR, Employment Law & Regulatory Compliance",
   // Drives every "Book a Consultation" mailto link.
   contactEmail: "anupoma@joyeepraxis.com",
   callsNote: "All client calls are with the Principal Consultant",
@@ -38,6 +44,8 @@ export const siteConfig = {
     { label: "About", href: "/about" },
     { label: "Publications", href: "/publications" },
   ],
+  // Footer-only links (also listed in the sitemap).
+  legalLinks: [{ label: "Regulatory information", href: "/regulatory-information" }],
   // Closing call-to-action band shown at the foot of each page.
   cta: {
     title: "Not sure where your gaps are?",
@@ -51,7 +59,7 @@ export const siteConfig = {
 
 export const homeContent = {
   hero: {
-    headline: "Sound Legal Counsel. Practical HR Solutions.",
+    headline: "HR and employment law, made practical",
     subheadline:
       "Independent legal, HR and compliance advice for businesses and organisations in the UK. Whether it is a workplace dispute, a regulatory inspection or a decision you cannot afford to get wrong, we help you find the right way forward.",
     cta_primary: "Book a Consultation",
@@ -127,31 +135,34 @@ export const homeContent = {
     eyebrow: "Fees",
     title: "Priced upfront, not by surprise",
     description:
-      "Every engagement is quoted before it begins. The figures below are starting points. The right level depends on the size of your service and what you already have in place.",
+      "Every engagement is quoted before it begins. The right level depends on the size of your service and what you already have in place.",
     items: [
       {
         label: "Onboarding package",
-        figure: "from £1,250",
         detail: "One-off fixed fee. Three levels, from essential foundations through to full inspection readiness.",
       },
       {
         label: "Monthly retainer",
-        figure: "from £295",
-        per: "/ month",
         detail: "Advisory hours, legislation alerts and annual policy review. Three-month minimum, then rolling.",
       },
       {
         label: "Project & ad hoc work",
-        figure: "on enquiry",
         detail: "Single policies, investigations, restructures or one-off reviews, quoted before work starts.",
       },
     ],
   },
   trust_badges: [
-    "Called to the Bar - The Honourable Society of Lincoln’s Inn",
-    "CIPD Level 7 - Strategic HR advice",
-    "7+ Years Combined Professional Expertise - HR support and legal practice across a vast range of matters and multiple jurisdictions",
-  ],
+    { title: "CIPD Level 7", detail: "Strategic HR advice" },
+    {
+      title: "7+ Years Combined Professional Expertise",
+      detail: "HR support and legal experience across a vast range of matters and multiple jurisdictions",
+    },
+    {
+      title: "Called to the Bar",
+      detail: "The Honourable Society of Lincoln’s Inn.",
+      link: { label: "Please see our regulatory information", href: "/regulatory-information" },
+    },
+  ] as Credential[],
 };
 
 // ---------------------------------------------------------------------------
@@ -165,6 +176,72 @@ export const footerContent = {
     "Joyee Praxis Advisory operates from Australia.",
     "Joyee Praxis Advisory provides HR, employment and regulatory consultancy. It is not a firm of solicitors and does not carry out reserved legal activities or provide litigation or advocacy services in England and Wales.",
     "Advice is provided to support your compliance. Legal responsibility for meeting the applicable Regulations and Quality Standards remains with the registered provider.",
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// Regulatory information ( /regulatory-information )
+// Any paragraph containing siteConfig.contactEmail shows it as a mail link.
+// ---------------------------------------------------------------------------
+
+export const regulatoryContent = {
+  eyebrow: "Regulatory information",
+  title: "How we work with you",
+  intro:
+    "Your matters are handled confidentially under a written client agreement. Where a matter calls for a regulated firm — litigation, advocacy, or advice that needs the protection of legal professional privilege — we will say so at the outset and refer you to one.",
+  sections: [
+    {
+      id: "what-we-are",
+      title: "What Joyee Praxis Advisory is",
+      paragraphs: [
+        "An independent HR, employment and regulatory consultancy. It is not a firm of solicitors, is not authorised or regulated by the Solicitors Regulation Authority, and does not carry out reserved legal activities, litigation or advocacy in England and Wales.",
+      ],
+    },
+    {
+      id: "professional-background",
+      title: "Professional background",
+      paragraphs: [
+        "Anupoma Joyeeta Joyee was called to the Bar by The Honourable Society of Lincoln’s Inn and is an unregistered barrister. She does not hold a practising certificate and does not practise as a barrister: the work provided here is consultancy. She also holds the CIPD Level 7 Advanced Diploma.",
+        "Because this work is not carried out as a practising barrister, the Bar Standards Board’s conduct rules for practising barristers do not apply to it, and complaints about it are handled by us rather than by the Bar Standards Board or the Legal Ombudsman. Our complaints procedure is below.",
+      ],
+    },
+    {
+      id: "privilege",
+      title: "Legal professional privilege",
+      paragraphs: [
+        "Legal advice privilege applies to advice given by members of the legal profession acting in that capacity. As no practising certificate is held, advice from Joyee Praxis Advisory should not be assumed to attract legal advice privilege. Litigation privilege is a separate protection, and may still apply where the dominant purpose of a communication is actual or contemplated proceedings, including employment tribunal claims.",
+        "In practice this matters less often than it first sounds. Much of what we do — building the process, drafting the documents, getting the records right — produces material that would be disclosable in any event, whoever advised on it. Where privilege is genuinely material to a decision you are taking, we will tell you and refer you to a regulated firm.",
+        "Confidentiality is a separate thing, and it is unaffected. It is a contractual duty owed to you under the client agreement, and it applies whether or not privilege does.",
+      ],
+    },
+    {
+      id: "your-data",
+      title: "Your data",
+      paragraphs: [
+        "Joyee Praxis Advisory operates from Australia and advises UK clients remotely. Personal data you provide is therefore accessed and processed outside the UK, under the UK International Data Transfer Agreement.",
+      ],
+    },
+    {
+      id: "responsibility",
+      title: "Where responsibility sits",
+      paragraphs: [
+        "We advise; you decide. Legal responsibility for meeting the applicable Regulations and Quality Standards remains with the registered provider, and nothing in our engagement makes us your Registered Manager, responsible individual or designated safeguarding lead.",
+      ],
+    },
+    {
+      id: "complaints",
+      title: "Complaints",
+      paragraphs: [
+        "If you are unhappy with anything, please tell us first, in writing, at anupoma@joyeepraxis.com. We will acknowledge within five working days and respond substantively within twenty. If we cannot resolve matters between us, the courts of England and Wales have jurisdiction.",
+      ],
+    },
+    {
+      id: "engagement",
+      title: "At the point of engagement",
+      paragraphs: [
+        "Clients receive the full regulatory statement in their engagement letter and confirm in writing that they have read it.",
+      ],
+    },
   ],
 };
 
