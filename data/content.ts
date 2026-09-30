@@ -99,7 +99,7 @@ export const homeContent = {
     "Called to the Bar - The Honourable Society of Lincoln’s Inn",
     "CIPD Level 7 (AHRI Recognised Pathway)",
     "Advocate - District and Sessions Judge Court",
-    "15+ Years Combined Professional Expertise",
+    "7+ Years Combined Professional Expertise",
   ],
 };
 
