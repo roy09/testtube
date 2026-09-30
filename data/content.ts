@@ -3,7 +3,7 @@
  * Swap any of these exports for a CMS fetch later without touching components.
  */
 
-export type IconName = "Shield" | "Scale" | "FileText" | "Users" | "Globe" | "Briefcase";
+export type IconName = "Shield" | "Scale" | "FileText" | "Users" | "Globe" | "Briefcase" | "GraduationCap";
 
 export type Service = {
   id: string;
@@ -273,7 +273,7 @@ export const servicesContent: { header: string; subtitle: string; items: Service
       icon: "Shield",
       title: "Regulatory Compliance & Governance",
       description:
-        "Compliance audits, inspection readiness and governance advice for boards, directors and managers. We have deep experience of Ofsted-regulated services and apply the same rigour to other regulated environments.",
+        "Compliance audits, inspection readiness and governance advice for boards, directors and managers. We have comprehensive, hands-on experience of Ofsted-regulated services and apply the same rigour to other regulated environments.",
     },
     {
       id: "policies-contracts",
@@ -295,6 +295,13 @@ export const servicesContent: { header: string; subtitle: string; items: Service
       title: "Business Setup, Tenders & Bids",
       description:
         "Support for new ventures and new services, from legal structure and registration to tender applications, quality narratives and Statements of Purpose. Bids for local authority tenders, with a proven track record.",
+    },
+    {
+      id: "management-training",
+      icon: "GraduationCap",
+      title: "Management Training: Demystifying Employment Relations",
+      description:
+        "Practical training for managers on building an effective workforce, employment relations, running investigations, disciplinary and LADO processes, and handling disputes, with the law explained in plain English.",
     },
   ],
 };
