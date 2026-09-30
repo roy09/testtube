@@ -21,7 +21,7 @@ export type Credential = {
 export type Article = {
   title: string;
   publication: string;
-  /** ISO date, YYYY-MM-DD */
+  /** YYYY-MM-DD, or YYYY-MM / YYYY when the exact date isn't known */
   date: string;
   excerpt: string;
   link: string;
@@ -375,6 +375,21 @@ export const publicationsContent: { header: string; subtitle: string; articles: 
   header: "Publications & Legal Commentary",
   subtitle: "Commentary on employment law, HR practice, regulation and compliance.",
   articles: [
+    {
+      title: "Updated Bangladesh labour laws: Gaping legal vacuum, lack of political goodwill and repressed rights to protest",
+      publication: "International Union Rights, Vol. 30, No. 3",
+      date: "2023",
+      excerpt:
+        "Commentary on Bangladesh’s amended labour laws: the legal gaps they leave, the lack of political goodwill behind them, and the continued repression of workers’ right to protest.",
+      link: "https://muse.jhu.edu/pub/438/article/915990",
+    },
+    {
+      title: "The Rising Death Toll of the Banshkhali Coal-Fired Power Plant",
+      publication: "International Union Rights, Vol. 28, No. 2",
+      date: "2021",
+      excerpt: "On the mounting deaths connected to the Banshkhali coal-fired power plant in Bangladesh.",
+      link: "https://muse.jhu.edu/pub/438/article/838084",
+    },
     // {
     //   title: "Article title",
     //   publication: "Newspaper / Journal Name",
