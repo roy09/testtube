@@ -77,7 +77,8 @@ push to master on GitHub ──► Cloudflare Workers Builds (Worker "testtube")
 | Colours, fonts | `app/globals.css` (`@theme` tokens) and `app/layout.tsx` (Google fonts) |
 | Footer text, ABN, disclaimers | `footerContent` in `data/content.ts` (layout in `components/Footer.tsx`) |
 | Page layouts | `app/**/page.tsx`, shared pieces in `components/` |
-| Favicon | `app/icon.svg` |
+| Logo | `components/Logo.tsx`: stamp image (`public/brand/stamp.png`, `stamp-light.png` for the footer) + the name as live text in the site fonts. Stamp recoloured to the site palette from the brand files in OneDrive → Joyee Praxis Advisory → Logo |
+| Browser tab / phone icon, link preview image | `app/icon.png`, `app/apple-icon.png`, `app/opengraph-image.png` |
 
 Stack: Next.js 16 (App Router), React 19, Tailwind CSS v4, lucide-react, TypeScript.
 
@@ -97,3 +98,13 @@ Stack: Next.js 16 (App Router), React 19, Tailwind CSS v4, lucide-react, TypeScr
   Google verification records run anupoma@joyeepraxis.com (Google Workspace). Never change them.
 - The Worker name, the `master` branch, and the git remote.
 - Force-pushing or rewriting history.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->
