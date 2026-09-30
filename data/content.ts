@@ -143,9 +143,9 @@ export const servicesContent: { header: string; subtitle: string; items: Service
     {
       id: "immigration",
       icon: "Globe",
-      title: "Sponsor Licence & Immigration Compliance",
+      title: "Sponsor Licence Readiness & Compliance Support",
       description:
-        "Sponsor-licence applications and audits, right-to-work checks, sponsorship cessation, and defining the worker-versus-contractor line to avoid Home Office enforcement.",
+        "A pre-licence compliance audit of your HR systems, right-to-work processes, record-keeping and reporting procedures. We put the required policies and procedures in place before you apply, gather and organise the supporting documents your company needs, and explain the process. Afterwards, we support you with ongoing sponsor duties, mock audits and compliance-visit preparation.",
     },
     {
       id: "business-setup",
