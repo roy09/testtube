@@ -70,11 +70,11 @@ push to master on GitHub ──► Cloudflare Workers Builds (Worker "testtube")
 | Contact email | `siteConfig.contactEmail` in `data/content.ts` (drives every "Book a Consultation" link) |
 | Services (add/remove/reword) | `servicesContent.items` — icons must be a name in `IconName`; add new Lucide icons to `components/ServiceIcon.tsx` |
 | New article / publication | `publicationsContent.articles` — copy the commented template; `date` is `YYYY-MM-DD`; sorted newest-first automatically |
-| Bio / About text | `aboutContent.bio_paragraphs` |
+| About page text (intro, sections, track record) | `aboutContent` |
 | Credentials list | `homeContent.trust_badges` ("Title - Detail" or "Title (Detail)" splits into two lines) |
 | Menu items | `siteConfig.navigation` (sitemap uses this list too) |
 | Colours, fonts | `app/globals.css` (`@theme` tokens) and `app/layout.tsx` (Google fonts) |
-| Footer disclaimer | `components/Footer.tsx` |
+| Footer text, ABN, disclaimers | `footerContent` in `data/content.ts` (layout in `components/Footer.tsx`) |
 | Page layouts | `app/**/page.tsx`, shared pieces in `components/` |
 | Favicon | `app/icon.svg` |
 

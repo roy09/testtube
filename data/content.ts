@@ -31,7 +31,7 @@ export const siteConfig = {
   tagline: "Independent Legal, HR & Compliance Counsel",
   // Drives every "Book a Consultation" mailto link.
   contactEmail: "anupoma@joyeepraxis.com",
-  teamSize: "Lead Counsel + 3 Dedicated Specialists",
+  callsNote: "All client calls are with the Principal Consultant",
   navigation: [
     { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
@@ -40,8 +40,8 @@ export const siteConfig = {
   ],
   // Closing call-to-action band shown at the foot of each page.
   cta: {
-    title: "Facing a legal, HR or compliance problem?",
-    body: "Book a confidential consultation. Tell us what is happening and we will give you a clear view of your options and the next steps.",
+    title: "Not sure where your gaps are?",
+    body: "That is usually the right time to call. A short conversation will tell you whether you need a full onboarding package, a single piece of work, or nothing at all yet.",
   },
 };
 
@@ -57,48 +57,114 @@ export const homeContent = {
     cta_primary: "Book a Consultation",
     cta_secondary: "Explore Services",
   },
-  problems: {
-    title: "Common problems we help with",
-    subtitle: "Clients usually come to us with a specific issue. These are some of the most common.",
-    items: [
-      "A grievance, disciplinary or dismissal that needs handling carefully",
-      "An Employment Tribunal claim, or the risk of one",
-      "Restructures, redundancies and difficult people decisions",
-      "An upcoming inspection, audit or regulator finding",
-      "Policies, contracts or staff handbooks that are missing or out of date",
-      "Data protection and GDPR questions",
-      "Sponsoring overseas workers or a Home Office compliance visit",
-      "Setting up a new service, or bidding for a contract or tender",
-    ],
-    footnote: "Don’t see your issue listed? Get in touch for an initial conversation.",
-  },
-  value_proposition: {
-    title: "The Follow-the-Sun Advantage",
+  what_we_do: {
+    eyebrow: "What we do",
+    title: "Three areas, one joined-up approach",
     description:
-      "With Lead Counsel based in Australia and a dedicated three-person team, UK clients get overnight turnaround on drafting, reviews and advice. You send your requirements at close of business; the work is done while you sleep.",
+      "Regulatory compliance and employment practice are the same problem seen from two sides. We work across both, so your policies, your contracts and your evidence say the same thing.",
+    areas: [
+      {
+        title: "Supported accommodation & children’s homes",
+        items: [
+          "Gap analysis against the Regulations and Quality Standards",
+          "Statement of Purpose drafting and review",
+          "Core safeguarding and operational policy suites",
+          "Notifications process and quality-monitoring framework",
+          "Mock inspection and evidence-folder structure",
+        ],
+      },
+      {
+        title: "HR & employment law",
+        items: [
+          "Contracts of employment and staff handbooks",
+          "Safer recruitment and pre-employment checks",
+          "Probation, supervision and appraisal frameworks",
+          "Disciplinary, grievance and capability casework",
+          "Day-to-day advice on the awkward cases",
+        ],
+      },
+      {
+        title: "Staffing & employment businesses",
+        items: [
+          "Conduct Regulations and Agency Worker Regulations compliance",
+          "Worker status, contracts and terms with hirers",
+          "Right to work, vetting and onboarding processes",
+          "Policy and process build-out for new agencies",
+          "Ongoing advisory as you scale",
+        ],
+      },
+    ],
+  },
+  how_it_works: {
+    eyebrow: "How it works",
+    title: "Fixed-fee onboarding, then support that fits",
+    description:
+      "Most clients start with a one-off onboarding package so the foundations are in place, then move onto a monthly retainer for advice, updates and oversight.",
     steps: [
       {
-        time: "UK close of business",
-        title: "You brief us",
-        detail: "Send the question, document or decision before you log off.",
+        title: "Introductory call",
+        detail:
+          "Thirty minutes, no charge. You tell us where you are and what is coming: registration, inspection, growth or a problem that needs solving now.",
       },
       {
-        time: "Australian working day",
-        title: "We draft and review",
-        detail: "Lead Counsel and the team work the matter while the UK is offline.",
+        title: "Proposal and fixed fee",
+        detail:
+          "A written proposal setting out deliverables, timeframe and a fixed price. You know the cost before anything starts.",
       },
       {
-        time: "UK start of day",
-        title: "Advice in your inbox",
-        detail: "Reviewed drafts and clear recommendations, ready for your morning.",
+        title: "Onboarding package",
+        detail:
+          "Gap analysis, policies, HR pack and inspection readiness, delivered over an agreed number of weeks with revision rounds built in.",
+      },
+      {
+        title: "Monthly retainer",
+        detail:
+          "Ongoing advisory hours, legislation alerts and scheduled check-ins. Three-month minimum, then rolling with 30 days’ notice.",
+      },
+    ],
+  },
+  fees: {
+    eyebrow: "Fees",
+    title: "Priced upfront, not by surprise",
+    description:
+      "Every engagement is quoted before it begins. The figures below are starting points. The right level depends on the size of your service and what you already have in place.",
+    items: [
+      {
+        label: "Onboarding package",
+        figure: "from £1,250",
+        detail: "One-off fixed fee. Three levels, from essential foundations through to full inspection readiness.",
+      },
+      {
+        label: "Monthly retainer",
+        figure: "from £295",
+        per: "/ month",
+        detail: "Advisory hours, legislation alerts and annual policy review. Three-month minimum, then rolling.",
+      },
+      {
+        label: "Project & ad hoc work",
+        figure: "on enquiry",
+        detail: "Single policies, investigations, restructures or one-off reviews, quoted before work starts.",
       },
     ],
   },
   trust_badges: [
     "Called to the Bar - The Honourable Society of Lincoln’s Inn",
-    "CIPD Level 7",
-    "Advocate - District and Sessions Judge Court",
-    "7+ Years Combined Professional Expertise",
+    "CIPD Level 7 - Strategic HR advice",
+    "7+ Years Combined Professional Expertise - HR support and legal practice across a vast range of matters and multiple jurisdictions",
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// Footer (every page)
+// ---------------------------------------------------------------------------
+
+export const footerContent = {
+  summary: "HR, employment law and regulatory compliance for UK providers.",
+  abn: "ABN 43 383 972 915",
+  disclaimers: [
+    "Joyee Praxis Advisory operates from Australia.",
+    "Joyee Praxis Advisory provides HR, employment and regulatory consultancy. It is not a firm of solicitors and does not carry out reserved legal activities or provide litigation or advocacy services in England and Wales.",
+    "Advice is provided to support your compliance. Legal responsibility for meeting the applicable Regulations and Quality Standards remains with the registered provider.",
   ],
 };
 
@@ -162,10 +228,48 @@ export const servicesContent: { header: string; subtitle: string; items: Service
 
 export const aboutContent = {
   title: "Legal Expertise, Grounded in Practical Experience",
-  bio_paragraphs: [
-    "Anupoma Joyeeta Joyee is a dually qualified legal professional, called to the Bar at The Honourable Society of Lincoln’s Inn and practicing as an Advocate. With a CIPD Level 7 qualification, she bridges the gap between employment law, day-to-day HR practice and regulatory compliance.",
-    "Her background includes serving as Head of HR & Legal and Compliance Manager for regulated social-care providers across South Gloucestershire, Gloucestershire, Bristol and Wales. That front-line experience means she understands the pressures organisations face, whether it is a regulator’s finding, a sponsor-licence issue or a tribunal claim.",
-  ],
+  summary:
+    "Joyee Praxis Advisory is a lawyer-led HR and employment law consultancy for UK employers, with a specialism in Ofsted-regulated care.",
+  intro:
+    "We give small UK employers the HR and employment law capability that larger organisations keep in-house — delivered by a lawyer with operational experience inside regulated care settings.",
+  problem: {
+    eyebrow: "Why we exist",
+    title: "The problem with helpline HR",
+    paragraphs: [
+      "If you are tied up with a popular subscription-based HR service, chances are you have to pick up the phone every time and explain your problem to an advisor you have never spoken to before. They don’t know your company’s unique context, and they can’t give you a solution that is practical and tailored to your problem. You are sent a template letter to fill in yourself and then run past them again. The next time you call, chances are you will be speaking to a different advisor.",
+      "This is the gap Joyee Praxis Advisory is here to close. You deal with one advisor, who sends you completed documents and, rather than generic, run-of-the-mill advice, tells you what suits your situation specifically.",
+    ],
+  },
+  comparison: {
+    eyebrow: "Where we fit",
+    title: "Process and law, before a claim exists",
+    items: [
+      { who: "HR consultants", what: "Advise on process but stop short of the law." },
+      {
+        who: "Employment solicitors",
+        what: "Advise on the law but are usually instructed once the problem has already happened.",
+      },
+      { who: "Joyee Praxis", what: "Does both, on retainer, before a claim exists.", highlight: true },
+    ],
+  },
+  track_record: {
+    eyebrow: "Our track record",
+    title: "Results in regulated care",
+    items: [
+      "Led supported accommodation clients to a Grade 1 Ofsted outcome",
+      "Holds ongoing HR and legal retainers with UK children’s home operators, covering policy review, probation and performance management, and staff supervision",
+      "Built a full policy framework for a registered children’s home, written to current legislation and operational reality rather than templates",
+      "Our Principal Consultant is a lawyer who has completed the Bar Professional Training Course in the UK and holds a postgraduate-level strategic diploma in HR management",
+    ],
+  },
+  praxis: {
+    eyebrow: "The Praxis idea",
+    quote: "Knowledge carried into action, rather than held as theory.",
+    paragraphs: [
+      "Unlike a coinage, praxis arrives with a meaning already attached, and that meaning is the reason it was chosen. From the Greek praxis: practice, action, doing. In Aristotle it is the term for knowledge carried into action rather than held as theory.",
+      "That is exactly what this practice sells. We don’t hand out vague opinions on the law. We translate the law into exactly what you have to do when you sit at your desk.",
+    ],
+  },
 };
 
 // ---------------------------------------------------------------------------

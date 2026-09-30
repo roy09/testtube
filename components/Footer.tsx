@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Mail, Users } from "lucide-react";
-import { siteConfig } from "@/data/content";
+import { Building2, Mail } from "lucide-react";
+import { footerContent, siteConfig } from "@/data/content";
 import { mailtoHref } from "@/lib/site";
 import { Logo } from "./Logo";
 
@@ -12,11 +12,11 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-12 px-4 py-14 sm:px-6 md:grid-cols-12 lg:px-8">
         <div className="md:col-span-5">
           <Logo tone="light" />
-          <p className="mt-4 max-w-sm text-sm leading-relaxed">{siteConfig.tagline}</p>
+          <p className="mt-4 max-w-sm text-sm leading-relaxed">{footerContent.summary}</p>
         </div>
 
         <nav aria-label="Footer" className="md:col-span-3">
-          <h2 className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Navigate</h2>
+          <h2 className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Pages</h2>
           <ul className="mt-4 space-y-2.5 text-sm">
             {siteConfig.navigation.map((item) => (
               <li key={item.href}>
@@ -38,17 +38,24 @@ export function Footer() {
               </a>
             </li>
             <li className="flex items-start gap-3">
-              <Users className="mt-0.5 size-4 shrink-0 text-slate-400" aria-hidden="true" />
-              {siteConfig.teamSize}
+              <Building2 className="mt-0.5 size-4 shrink-0 text-slate-400" aria-hidden="true" />
+              {footerContent.abn}
             </li>
           </ul>
         </div>
       </div>
 
       <div className="border-t border-white/10">
-        <p className="mx-auto max-w-6xl px-4 py-6 text-xs text-slate-400 sm:px-6 lg:px-8">
-          © {year} {siteConfig.siteName}. Information on this website is general in nature and does not constitute legal advice.
-        </p>
+        <div className="mx-auto max-w-6xl space-y-3 px-4 py-8 text-xs leading-relaxed text-slate-400 sm:px-6 lg:px-8">
+          {footerContent.disclaimers.map((text) => (
+            <p key={text} className="max-w-4xl">
+              {text}
+            </p>
+          ))}
+          <p>
+            © {year} {siteConfig.siteName}. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );
