@@ -304,13 +304,13 @@ export const servicesContent: { header: string; subtitle: string; items: Service
 // ---------------------------------------------------------------------------
 
 export const aboutContent = {
-  title: "Legal Expertise, Grounded in Practical Experience",
+  title: "HR Expertise, Grounded in Practical Experience",
   summary:
     "Joyee Praxis Advisory is a lawyer-led HR and employment law consultancy for UK employers, with a specialism in Ofsted-regulated care.",
   intro:
     "We give small UK employers the HR and employment law capability that larger organisations keep in-house — delivered by a lawyer with operational experience inside regulated care settings.",
   problem: {
-    eyebrow: "Why we exist",
+    eyebrow: "Why we created Joyee Praxis Advisory",
     title: "The problem with helpline HR",
     paragraphs: [
       "If you are tied up with a popular subscription-based HR service, chances are you have to pick up the phone every time and explain your problem to an advisor you have never spoken to before. They don’t know your company’s unique context, and they can’t give you a solution that is practical and tailored to your problem. You are sent a template letter to fill in yourself and then run past them again. The next time you call, you will be speaking to a different advisor, starting all of it from scratch.",
@@ -327,7 +327,7 @@ export const aboutContent = {
         who: "Employment solicitors",
         what: "Advise on the law but are usually instructed once the problem has already happened.",
       },
-      { who: "Joyee Praxis", what: "Does both, on retainer, before a claim exists.", highlight: true },
+      { who: "Joyee Praxis Advisory", what: "Does both, on retainer, before a claim exists.", highlight: true },
     ],
   },
   track_record: {
@@ -345,7 +345,7 @@ export const aboutContent = {
     quote: "Knowledge carried into action, rather than held as theory.",
     paragraphs: [
       "Unlike a coinage, praxis arrives with a meaning already attached, and that meaning is the reason it was chosen. From the Greek praxis: practice, action, doing. In Aristotle it is the term for knowledge carried into action rather than held as theory.",
-      "That is exactly what this practice sells. We don’t hand out vague opinions on the law. We translate the law into exactly what you have to do when you sit at your desk.",
+      "That is exactly what Joyee Praxis Advisory provides. We don’t hand out vague opinions on the law. We translate the law into exactly what you have to do when you sit at your desk.",
     ],
   },
 };
