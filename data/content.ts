@@ -236,7 +236,8 @@ export const aboutContent = {
     eyebrow: "Why we exist",
     title: "The problem with helpline HR",
     paragraphs: [
-      "If you are tied up with a popular subscription-based HR service, chances are you have to pick up the phone every time and explain your problem to an advisor you have never spoken to before. They don’t know your company’s unique context, and they can’t give you a solution that is practical and tailored to your problem. You are sent a template letter to fill in yourself and then run past them again. The next time you call, chances are you will be speaking to a different advisor.",
+      "If you are tied up with a popular subscription-based HR service, chances are you have to pick up the phone every time and explain your problem to an advisor you have never spoken to before. They don’t know your company’s unique context, and they can’t give you a solution that is practical and tailored to your problem. You are sent a template letter to fill in yourself and then run past them again. The next time you call, you will be speaking to a different advisor, starting all of it from scratch.",
+      "They will read your employment problems from a dashboard. They do not build a relationship with their clients, and do not know which issues keep surfacing. There is no follow-up action: once you have dealt with the matter, you are given no advice on how to prevent it from recurring.",
       "This is the gap Joyee Praxis Advisory is here to close. You deal with one advisor, who sends you completed documents and, rather than generic, run-of-the-mill advice, tells you what suits your situation specifically.",
     ],
   },
