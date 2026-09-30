@@ -21,7 +21,7 @@ export function getArticles(): Article[] {
 
 /**
  * Splits a credential like "Advocate - District and Sessions Judge Court" or
- * "CIPD Level 7 (AHRI Recognised Pathway)" into a title and a qualifier line.
+ * "Title (Detail)" into a title and a qualifier line.
  */
 export function splitCredential(text: string): { title: string; detail?: string } {
   const dash = text.split(" - ");

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { BadgeCheck, MapPin, Users } from "lucide-react";
+import { BadgeCheck, Users } from "lucide-react";
 import { ButtonLink } from "@/components/ButtonLink";
 import { CtaBand } from "@/components/CtaBand";
 import { PageHeader } from "@/components/PageHeader";
@@ -51,10 +51,6 @@ export default function AboutPage() {
                 The practice
               </h2>
               <ul className="mt-5 space-y-3 text-sm text-navy">
-                <li className="flex gap-3">
-                  <MapPin className="mt-0.5 size-4 shrink-0 text-ink" aria-hidden="true" />
-                  {siteConfig.locations}
-                </li>
                 <li className="flex gap-3">
                   <Users className="mt-0.5 size-4 shrink-0 text-ink" aria-hidden="true" />
                   {siteConfig.teamSize}

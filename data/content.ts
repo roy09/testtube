@@ -31,7 +31,6 @@ export const siteConfig = {
   tagline: "Independent Legal, HR & Compliance Counsel",
   // Drives every "Book a Consultation" mailto link.
   contactEmail: "anupoma@joyeepraxis.com",
-  locations: "United Kingdom | Australia",
   teamSize: "Lead Counsel + 3 Dedicated Specialists",
   navigation: [
     { label: "Home", href: "/" },
@@ -54,7 +53,7 @@ export const homeContent = {
   hero: {
     headline: "Sound Legal Counsel. Practical HR Solutions.",
     subheadline:
-      "Independent legal, HR and compliance advice for businesses and organisations in the UK and Australia. Whether it is a workplace dispute, a regulatory inspection or a decision you cannot afford to get wrong, we help you find the right way forward.",
+      "Independent legal, HR and compliance advice for businesses and organisations in the UK. Whether it is a workplace dispute, a regulatory inspection or a decision you cannot afford to get wrong, we help you find the right way forward.",
     cta_primary: "Book a Consultation",
     cta_secondary: "Explore Services",
   },
@@ -76,7 +75,7 @@ export const homeContent = {
   value_proposition: {
     title: "The Follow-the-Sun Advantage",
     description:
-      "With Lead Counsel based in Australia and a dedicated three-person team, UK clients get overnight turnaround on drafting, reviews and advice. You send your requirements at close of business; the work is done while you sleep. Australian clients have the same team available in their own working hours.",
+      "With Lead Counsel based in Australia and a dedicated three-person team, UK clients get overnight turnaround on drafting, reviews and advice. You send your requirements at close of business; the work is done while you sleep.",
     steps: [
       {
         time: "UK close of business",
@@ -97,7 +96,7 @@ export const homeContent = {
   },
   trust_badges: [
     "Called to the Bar - The Honourable Society of Lincoln’s Inn",
-    "CIPD Level 7 (AHRI Recognised Pathway)",
+    "CIPD Level 7",
     "Advocate - District and Sessions Judge Court",
     "7+ Years Combined Professional Expertise",
   ],
@@ -164,7 +163,7 @@ export const servicesContent: { header: string; subtitle: string; items: Service
 export const aboutContent = {
   title: "Legal Expertise, Grounded in Practical Experience",
   bio_paragraphs: [
-    "Anupoma Joyeeta Joyee is a dually qualified legal professional, called to the Bar at The Honourable Society of Lincoln’s Inn and practicing as an Advocate. With a CIPD Level 7 qualification (AHRI recognised pathway), she bridges the gap between employment law, day-to-day HR practice and regulatory compliance.",
+    "Anupoma Joyeeta Joyee is a dually qualified legal professional, called to the Bar at The Honourable Society of Lincoln’s Inn and practicing as an Advocate. With a CIPD Level 7 qualification, she bridges the gap between employment law, day-to-day HR practice and regulatory compliance.",
     "Her background includes serving as Head of HR & Legal and Compliance Manager for regulated social-care providers across South Gloucestershire, Gloucestershire, Bristol and Wales. That front-line experience means she understands the pressures organisations face, whether it is a regulator’s finding, a sponsor-licence issue or a tribunal claim.",
   ],
 };

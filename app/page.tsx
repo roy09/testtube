@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, BadgeCheck, Check, MapPin, Moon, Sunrise, Sunset, Users } from "lucide-react";
+import { ArrowRight, BadgeCheck, Check, Moon, Sunrise, Sunset, Users } from "lucide-react";
 import { ButtonLink } from "@/components/ButtonLink";
 import { CtaBand } from "@/components/CtaBand";
 import { ServiceIcon } from "@/components/ServiceIcon";
@@ -60,13 +60,6 @@ export default function HomePage() {
                 ))}
               </ul>
               <dl className="mt-6 grid gap-3 border-t border-white/10 pt-6 text-sm">
-                <div className="flex gap-3">
-                  <MapPin className="mt-0.5 size-4 shrink-0 text-slate-400" aria-hidden="true" />
-                  <div>
-                    <dt className="sr-only">Locations</dt>
-                    <dd className="text-slate-300">{siteConfig.locations}</dd>
-                  </div>
-                </div>
                 <div className="flex gap-3">
                   <Users className="mt-0.5 size-4 shrink-0 text-slate-400" aria-hidden="true" />
                   <div>

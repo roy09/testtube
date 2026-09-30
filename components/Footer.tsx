@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, MapPin, Users } from "lucide-react";
+import { Mail, Users } from "lucide-react";
 import { siteConfig } from "@/data/content";
 import { mailtoHref } from "@/lib/site";
 import { Logo } from "./Logo";
@@ -36,10 +36,6 @@ export function Footer() {
               <a href={mailtoHref("Enquiry")} className="break-all hover:text-white">
                 {siteConfig.contactEmail}
               </a>
-            </li>
-            <li className="flex items-start gap-3">
-              <MapPin className="mt-0.5 size-4 shrink-0 text-slate-400" aria-hidden="true" />
-              {siteConfig.locations}
             </li>
             <li className="flex items-start gap-3">
               <Users className="mt-0.5 size-4 shrink-0 text-slate-400" aria-hidden="true" />
