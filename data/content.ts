@@ -105,7 +105,7 @@ export const homeContent = {
   },
   how_it_works: {
     eyebrow: "How it works",
-    title: "Fixed-fee onboarding, then support that fits",
+    title: "Fixed-fee onboarding, then custom retainers",
     description:
       "Most clients start with a one-off onboarding package so the foundations are in place, then move onto a monthly retainer for advice, updates and oversight.",
     steps: [
@@ -127,7 +127,7 @@ export const homeContent = {
       {
         title: "Monthly retainer",
         detail:
-          "Ongoing advisory hours, legislation alerts and scheduled check-ins. Three-month minimum, then rolling with 30 days’ notice.",
+          "Ongoing advisory hours, legislation alerts and scheduled check-ins. No minimum term: leave any time with one month’s notice.",
       },
     ],
   },
@@ -143,12 +143,20 @@ export const homeContent = {
       },
       {
         label: "Monthly retainer",
-        detail: "Advisory hours, legislation alerts and annual policy review. Three-month minimum, then rolling.",
+        detail: "Advisory hours, legislation alerts and annual policy review. No minimum term, one month’s notice.",
       },
       {
         label: "Project & ad hoc work",
         detail: "Single policies, investigations, restructures or one-off reviews, quoted before work starts.",
       },
+    ],
+  },
+  flexible_terms: {
+    title: "No lock-in contracts",
+    points: [
+      { title: "No long-term obligations", detail: "You are not tied into a lengthy contract." },
+      { title: "Leave any time", detail: "End your retainer whenever you choose, with one month’s notice." },
+      { title: "Easy to get out of", detail: "Our terms are simple, so stepping away is straightforward if your needs change." },
     ],
   },
   trust_badges: [

@@ -8,7 +8,7 @@ import { homeContent, servicesContent, siteConfig } from "@/data/content";
 import { mailtoHref } from "@/lib/site";
 
 export default function HomePage() {
-  const { hero, trust_badges, what_we_do, how_it_works, fees } = homeContent;
+  const { hero, trust_badges, what_we_do, how_it_works, fees, flexible_terms } = homeContent;
   // A headline with two sentences splits into two lines, the second one quieter.
   const [headlineLead, ...headlineRest] = hero.headline.split(/(?<=\.)\s+/);
 
@@ -137,6 +137,21 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
+
+          <div className="mt-6 border border-line bg-mist p-8 lg:grid lg:grid-cols-12 lg:gap-8">
+            <h3 className="text-2xl lg:col-span-3">{flexible_terms.title}</h3>
+            <ul className="mt-6 grid gap-6 sm:grid-cols-3 lg:col-span-9 lg:mt-0">
+              {flexible_terms.points.map((point) => (
+                <li key={point.title} className="flex gap-3">
+                  <Check className="mt-1 size-4 shrink-0 text-navy" aria-hidden="true" />
+                  <div>
+                    <p className="font-semibold text-navy">{point.title}</p>
+                    <p className="mt-1 leading-relaxed text-ink">{point.detail}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
