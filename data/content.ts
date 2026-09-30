@@ -294,7 +294,7 @@ export const servicesContent: { header: string; subtitle: string; items: Service
       icon: "Briefcase",
       title: "Business Setup, Tenders & Bids",
       description:
-        "Support for new ventures and new services, from legal structure and registration to tender applications, quality narratives and Statements of Purpose.",
+        "Support for new ventures and new services, from legal structure and registration to tender applications, quality narratives and Statements of Purpose. Bids for local authority tenders, with a proven track record.",
     },
   ],
 };
