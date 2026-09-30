@@ -154,7 +154,7 @@ export const homeContent = {
   trust_badges: [
     { title: "CIPD Level 7", detail: "Strategic HR advice" },
     {
-      title: "7+ Years Combined Professional Expertise",
+      title: "7+ Years Professional Expertise",
       detail: "HR support and legal experience across a vast range of matters and multiple jurisdictions",
     },
     {
