@@ -2,12 +2,9 @@ import type { Metadata } from "next";
 import { CtaBand } from "@/components/CtaBand";
 import { PageHeader } from "@/components/PageHeader";
 import { regulatoryContent, siteConfig } from "@/data/content";
-import { mailtoHref } from "@/lib/site";
+import { mailtoHref, pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Regulatory information",
-  description: regulatoryContent.intro,
-};
+export const metadata: Metadata = pageMetadata("regulatory", "/regulatory-information/");
 
 /** Shows the contact email as a mail link wherever it appears in a paragraph. */
 function WithEmailLink({ text }: { text: string }) {

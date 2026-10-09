@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, Check, Phone } from "lucide-react";
 import { ButtonLink } from "@/components/ButtonLink";
@@ -5,7 +6,9 @@ import { CredentialDetail } from "@/components/CredentialDetail";
 import { CtaBand } from "@/components/CtaBand";
 import { ServiceIcon } from "@/components/ServiceIcon";
 import { homeContent, servicesContent, siteConfig } from "@/data/content";
-import { mailtoHref } from "@/lib/site";
+import { mailtoHref, pageMetadata } from "@/lib/site";
+
+export const metadata: Metadata = pageMetadata("home", "/");
 
 export default function HomePage() {
   const { hero, trust_badges, what_we_do, how_it_works, fees, flexible_terms } = homeContent;

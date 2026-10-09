@@ -2,12 +2,9 @@ import type { Metadata } from "next";
 import { ArrowUpRight } from "lucide-react";
 import { PageHeader } from "@/components/PageHeader";
 import { publicationsContent } from "@/data/content";
-import { formatDate, getArticles } from "@/lib/site";
+import { formatDate, getArticles, pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Publications",
-  description: publicationsContent.subtitle,
-};
+export const metadata: Metadata = pageMetadata("publications", "/publications/");
 
 export default function PublicationsPage() {
   const articles = getArticles();

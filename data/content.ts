@@ -53,6 +53,47 @@ export const siteConfig = {
   },
 };
 
+// What Google shows for each page: the blue link (title) and the snippet under it (description).
+// Keep titles under ~60 characters and descriptions under ~155; " | Joyee Praxis Advisory" is
+// added to every title except the homepage's.
+export const pageSeo = {
+  home: {
+    title: "Joyee Praxis Advisory | HR & Employment Law Consultancy, UK",
+    description:
+      "Lawyer-led HR, employment law and regulatory compliance advice for UK employers, with a specialism in Ofsted-regulated children’s homes and supported accommodation.",
+  },
+  services: {
+    title: "HR, Employment Law & Ofsted Compliance Services",
+    description:
+      "Employment law advice, HR support, Ofsted inspection readiness, sponsor licence compliance, policies and tender bids for UK employers. Fixed fees, no lock-in.",
+  },
+  about: {
+    title: "About Our Lawyer-Led HR Consultancy",
+    description:
+      "One advisor who knows your business: a lawyer-led HR and employment law consultancy for UK employers, with hands-on experience in Ofsted-regulated care.",
+  },
+  publications: {
+    title: "Employment Law & Labour Rights Publications",
+    description:
+      "Published commentary on employment law, labour rights, HR practice, regulation and compliance by Joyee Praxis Advisory’s Principal Consultant.",
+  },
+  regulatory: {
+    title: "Regulatory Information",
+    description:
+      "How Joyee Praxis Advisory works with clients: our status as a consultancy, professional background, legal privilege, data handling and complaints.",
+  },
+};
+
+// About the business and its principal, for search engines (not shown on the page).
+export const businessProfile = {
+  principal: {
+    name: "Anupoma Joyeeta Joyee",
+    jobTitle: "Principal Consultant",
+    credentials: ["CIPD Level 7 Advanced Diploma", "Called to the Bar, The Honourable Society of Lincoln’s Inn"],
+  },
+  areaServed: "United Kingdom",
+};
+
 // ---------------------------------------------------------------------------
 // 2. Homepage ( / )
 // ---------------------------------------------------------------------------

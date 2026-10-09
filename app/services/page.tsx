@@ -3,11 +3,9 @@ import { CtaBand } from "@/components/CtaBand";
 import { PageHeader } from "@/components/PageHeader";
 import { ServiceCard } from "@/components/ServiceCard";
 import { servicesContent } from "@/data/content";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Services",
-  description: servicesContent.subtitle,
-};
+export const metadata: Metadata = pageMetadata("services", "/services/");
 
 export default function ServicesPage() {
   return (

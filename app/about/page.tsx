@@ -5,12 +5,9 @@ import { CredentialDetail } from "@/components/CredentialDetail";
 import { CtaBand } from "@/components/CtaBand";
 import { PageHeader } from "@/components/PageHeader";
 import { aboutContent, homeContent, siteConfig } from "@/data/content";
-import { mailtoHref } from "@/lib/site";
+import { mailtoHref, pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "About",
-  description: aboutContent.summary,
-};
+export const metadata: Metadata = pageMetadata("about", "/about/");
 
 const eyebrowClass = "text-xs font-semibold uppercase tracking-[0.2em] text-ink";
 
