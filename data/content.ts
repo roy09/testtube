@@ -113,7 +113,7 @@ export const homeContent = {
       "Regulatory compliance and employment practice are the same problem seen from two sides. We work across both, so your policies, your contracts and your evidence say the same thing.",
     areas: [
       {
-        title: "Supported accommodation & children’s homes",
+        title: "Ofsted-registered supported accommodation & children’s homes",
         items: [
           "Gap analysis against the Regulations and Quality Standards",
           "Statement of Purpose drafting and review",
@@ -123,7 +123,7 @@ export const homeContent = {
         ],
       },
       {
-        title: "HR & employment law",
+        title: "HR & UK employment law",
         items: [
           "Contracts of employment and staff handbooks",
           "Safer recruitment and pre-employment checks",
@@ -306,7 +306,7 @@ export const servicesContent: { header: string; subtitle: string; items: Service
     {
       id: "employment-law",
       icon: "Scale",
-      title: "Employment Law & Workplace Disputes",
+      title: "UK Employment Law & Workplace Disputes",
       description:
         "Advice on grievances, disciplinaries, suspensions and dismissals, and on reducing Employment Tribunal risk. We help you make high-stakes people decisions fairly, lawfully and with a clear paper trail.",
     },
