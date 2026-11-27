@@ -267,7 +267,7 @@ export const trainingContent: {
 } = {
   header: "Training for Managers",
   subtitle:
-    "Demystifying employment relations: practical sessions on building an effective workforce, running investigations, disciplinary and LADO processes, and handling disputes, with the law explained in plain English.",
+    "Demystifying employment relations: practical sessions on building an effective workforce, running investigations, disciplinary and LADO processes, and handling disputes.",
   emptyMessage: "No sessions are scheduled at the moment. New dates will be published here.",
   enquiry: "Interested in training for your team, or want to hear about new dates?",
   sessions: [
