@@ -274,7 +274,7 @@ export const trainingContent: {
     {
       title: "Ofsted-compliant safer recruitment and HR files",
       date: "2027-01-19",
-      time: "10:00–11:30 (UK time)",
+      time: "10:00–12:00 (UK time)",
       format: "Online",
       price: "£65 per person (early bird £55 if you register by 11 January)",
       description:
