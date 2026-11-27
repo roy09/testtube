@@ -71,6 +71,7 @@ push to master on GitHub ──► Cloudflare Workers Builds (Worker "testtube")
 | Services (add/remove/reword) | `servicesContent.items` — icons must be a name in `IconName`; add new Lucide icons to `components/ServiceIcon.tsx` |
 | New article / publication | `publicationsContent.articles` — copy the commented template; `date` is `YYYY-MM-DD` (or `YYYY-MM` / `YYYY` if only that is known); sorted newest-first automatically |
 | About page text (intro, sections, track record) | `aboutContent` |
+| Training sessions / registration links | `trainingContent.sessions` — copy the commented template; `date` is `YYYY-MM-DD`. Paid sessions use `tickets` (Stripe payment links; `availableUntil` hides an early-bird button after that date), free ones `registerUrl`. Past sessions and expired tickets hide themselves in the visitor's browser |
 | Credentials list | `homeContent.trust_badges` (`title`, optional `detail` and `link`) |
 | Regulatory information page | `regulatoryContent` (footer link lives in `siteConfig.legalLinks`) |
 | Menu items | `siteConfig.navigation` (sitemap uses this list too) |

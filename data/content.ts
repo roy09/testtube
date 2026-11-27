@@ -18,6 +18,25 @@ export type Credential = {
   link?: { label: string; href: string };
 };
 
+export type TrainingSession = {
+  title: string;
+  /** YYYY-MM-DD. The session disappears from the page the day after this date. */
+  date: string;
+  /** e.g. "10:00–12:30 (UK time)" */
+  time: string;
+  /** e.g. "Online (Microsoft Teams)" or "In person, Bristol" */
+  format: string;
+  /** Optional, e.g. "£95 per person" or "Free" */
+  price?: string;
+  description: string;
+  /** Paid booking buttons, e.g. Stripe payment links. A ticket with `availableUntil`
+   *  (YYYY-MM-DD) disappears after that date, e.g. an early-bird price. */
+  tickets?: { label: string; url: string; availableUntil?: string }[];
+  /** For free sessions: where people sign up (Google/Microsoft Forms, Zoom, etc.). */
+  registerUrl?: string;
+  // With no tickets and no registerUrl the page says "Registration opens soon".
+};
+
 export type Article = {
   title: string;
   publication: string;
@@ -42,6 +61,7 @@ export const siteConfig = {
     { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
     { label: "About", href: "/about" },
+    { label: "Training", href: "/training" },
     { label: "Publications", href: "/publications" },
   ],
   // Footer-only links (also listed in the sitemap).
@@ -76,6 +96,11 @@ export const pageSeo = {
     title: "Employment Law & Labour Rights Publications",
     description:
       "Published commentary on employment law, labour rights, HR practice, regulation and compliance by Joyee Praxis Advisory’s Principal Consultant.",
+  },
+  training: {
+    title: "Employment Relations Training for Managers",
+    description:
+      "Upcoming training sessions for managers on employment relations, investigations, disciplinary and LADO processes and handling disputes. Register online.",
   },
   regulatory: {
     title: "Regulatory Information",
@@ -225,6 +250,49 @@ export const footerContent = {
     "Joyee Praxis Advisory operates from Australia.",
     "Joyee Praxis Advisory provides HR, employment and regulatory consultancy. It is not a firm of solicitors and does not carry out reserved legal activities or provide litigation or advocacy services in England and Wales.",
     "Advice is provided to support your compliance. Legal responsibility for meeting the applicable Regulations and Quality Standards remains with the registered provider.",
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// Training ( /training )
+// Add a session by copying the template below. Past sessions hide themselves automatically.
+// ---------------------------------------------------------------------------
+
+export const trainingContent: {
+  header: string;
+  subtitle: string;
+  emptyMessage: string;
+  enquiry: string;
+  sessions: TrainingSession[];
+} = {
+  header: "Training for Managers",
+  subtitle:
+    "Demystifying employment relations: practical sessions on building an effective workforce, running investigations, disciplinary and LADO processes, and handling disputes, with the law explained in plain English.",
+  emptyMessage: "No sessions are scheduled at the moment. New dates will be published here.",
+  enquiry: "Interested in training for your team, or want to hear about new dates?",
+  sessions: [
+    {
+      title: "Ofsted-compliant safer recruitment and HR files",
+      date: "2026-12-15",
+      time: "10:00–11:30 (UK time)",
+      format: "Online",
+      price: "£65 per person (early bird £55 if you register by 6 December)",
+      description:
+        "For managers who want to understand what Ofsted looks for in safer recruitment, and which HR files you should have ready before an inspection.",
+      tickets: [
+        { label: "Book early bird – £55", url: "https://buy.stripe.com/8x214gf5X0D35qo9vK38402", availableUntil: "2026-12-06" },
+        { label: "Book – £65", url: "https://buy.stripe.com/dRm4gs7DvbhHdWU4bq38401" },
+      ],
+    },
+    // {
+    //   title: "Running fair workplace investigations",
+    //   date: "2027-01-20",
+    //   time: "10:00–12:30 (UK time)",
+    //   format: "Online (Microsoft Teams)",
+    //   price: "£95 per person",
+    //   description: "One or two sentences on what managers will learn.",
+    //   registerUrl: "https://…",
+    // },
   ],
 };
 
