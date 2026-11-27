@@ -272,6 +272,16 @@ export const trainingContent: {
   enquiry: "Interested in training for your team, or want to hear about new dates?",
   sessions: [
     {
+      title: "Safer recruitment mistakes costing your Ofsted outcome",
+      date: "2026-12-16",
+      time: "10:00 (UK time)",
+      format: "Online",
+      price: "Free to attend",
+      description:
+        "A free session on the safer recruitment mistakes that can cost you at an Ofsted inspection, and how to avoid them.",
+      registerUrl: "https://forms.gle/DcKRYoc6g6h1R3Df6",
+    },
+    {
       title: "Ofsted-compliant safer recruitment and HR files",
       date: "2027-01-19",
       time: "10:00–12:00 (UK time)",
