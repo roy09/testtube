@@ -98,7 +98,7 @@ export const pageSeo = {
       "Published commentary on employment law, labour rights, HR practice, regulation and compliance by Joyee Praxis Advisory’s Principal Consultant.",
   },
   training: {
-    title: "Employment Relations Training for Managers",
+    title: "Training for Managers",
     description:
       "Upcoming training sessions for managers on employment relations, investigations, disciplinary and LADO processes and handling disputes. Register online.",
   },
