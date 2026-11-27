@@ -273,14 +273,14 @@ export const trainingContent: {
   sessions: [
     {
       title: "Ofsted-compliant safer recruitment and HR files",
-      date: "2026-12-15",
+      date: "2027-01-19",
       time: "10:00–11:30 (UK time)",
       format: "Online",
-      price: "£65 per person (early bird £55 if you register by 6 December)",
+      price: "£65 per person (early bird £55 if you register by 11 January)",
       description:
         "For managers who want to understand what Ofsted looks for in safer recruitment, and which HR files you should have ready before an inspection.",
       tickets: [
-        { label: "Book early bird – £55", url: "https://buy.stripe.com/8x214gf5X0D35qo9vK38402", availableUntil: "2026-12-06" },
+        { label: "Book early bird – £55", url: "https://buy.stripe.com/8x214gf5X0D35qo9vK38402", availableUntil: "2027-01-11" },
         { label: "Book – £65", url: "https://buy.stripe.com/dRm4gs7DvbhHdWU4bq38401" },
       ],
     },
